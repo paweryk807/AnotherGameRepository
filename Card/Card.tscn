@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Card/Card.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Cards/CardTemplate/CardBorder.png" type="Texture" id=2]
+
+[node name="Card" type="MarginContainer"]
+anchor_right = 0.244
+anchor_bottom = 0.583
+margin_right = 0.143982
+margin_bottom = 0.200012
+rect_pivot_offset = Vector2( 125, 175 )
+script = ExtResource( 1 )
+
+[node name="MainImage" type="Sprite" parent="."]
+centered = false
+
+[node name="Border" type="Sprite" parent="."]
+position = Vector2( 125, 175 )
+texture = ExtResource( 2 )
